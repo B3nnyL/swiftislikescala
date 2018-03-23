@@ -1,5 +1,4 @@
-def area(width: Int, height: Int): Int = {
-    return width * height
+function area(width: number, height: number): number{
+    return width * height;
 }
-
-area(width = 10, height = 10)
+area(10,10);

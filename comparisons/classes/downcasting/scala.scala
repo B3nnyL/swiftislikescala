@@ -1,4 +1,12 @@
-for (obj <- someObjects) {
-    val movie = obj.asInstanceOf[Movie]
-    println(s"Movie: '${movie.name}', dir. ${movie.director}")
+class Animal{
+}
+
+class Cat extends Animal {
+    meow(){}
+}
+
+function downcasting(ragdoll: Animal){
+    if (ragdoll instance of Cat){
+        ragdoll.meow();
+    }
 }

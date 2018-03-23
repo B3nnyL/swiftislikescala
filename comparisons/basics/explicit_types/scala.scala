@@ -1,1 +1,1 @@
-val explicitDouble: Double = 70
+let explicitDouble: number = 70

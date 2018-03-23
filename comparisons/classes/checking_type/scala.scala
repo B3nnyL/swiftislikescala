@@ -1,10 +1,10 @@
 var movieCount = 0
 var songCount = 0
  
-for (item <- library) {
-    if (item.isInstanceOf[Movie]) {
+for (let item of library) {
+    if (item instanceof Movie) {
         movieCount += 1
-    } else if (item.isInstanceOf[Song]) {
+    } else if (item instanceof Song) {
         songCount += 1
     }
 }

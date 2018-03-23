@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Swift is a lot like Scala</title>
-  <meta name="description" content="Examples of how Apple's Swift language is similar to Scala.">
+  <meta name="description" content="Transfer swift knowledge to typescript">
   <link rel="stylesheet" href="css/prism.css">
   <link rel="stylesheet" href="css/index.css">
   <script type="text/javascript" src="//use.typekit.net/ghy0wve.js"></script>
@@ -14,32 +14,15 @@
   <script src="js/prism.js"></script>
   <script src="js/index.js"></script>
 </head>
-<body><a href="https://github.com/leverich/swiftislikescala"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+<body><a href=""><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
   <div class="page">
     <header class="page-header">
       <div class="inner">
-        <h1>Swift is a lot like Scala</h1>
+        <h1>Swift VS TypeScript</h1>
       </div>
     </header>
     <div class="explanation">
-      <div class="inner">
-        <p>A new programming language called <a href="https://developer.apple.com/swift/">Swift</a> was announced at <a href="https://developer.apple.com/wwdc/">WWDC'14</a>. Here's a source-to-source comparison of Swift and <a href="http://www.scala-lang.org/">Scala</a> using the <a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html">examples</a> given in "The Swift Programming Language" book published by Apple in the iTunes Store.</p>
-        <p>I suspect the two are related ;-) Syntacticly, it's fair to say that Swift is a dialect of Scala. Swift inherits from Scala most of the "banner" features listed by Apple: Type Inference, Closures, Tuples, Protocols, Extensions, Generics, Read-Eval-Print-Loop, etc.</p>
-        <p>
-          Despite their syntactic similarity, Swift's runtime environment is quite distinct from Scala's, and is perhaps the most interesting aspect of the new language.
-          Scala compiles to the JVM, uses garbage collection, and its object model transparently integrates with Java.
-          Swift compiles to native code, uses automatic reference counting, and its object model transparently integrates with Objective-C.
-          Thus, the similarity between the two languages does not extend much below the surface.
-        </p>
-        <p><a href="https://github.com/densh/talks/">Den Shabalin</a> provides another excellent <a href="http://www.scribd.com/doc/227879724/Swift-vs-Scala-2-11">point-by-point comparison</a>.</p>
-        <p>
-          p.s. Don't take this code too seriously! Most of it is
-          rote, minimalistic translation of the Swift examples given
-          by Apple. I give a handful of more idiomatic Scala
-          translations. Feel free to submit a GitHub issue/pull request
-          if you find anything unbearably crass.
-        </p>
-      </div>
+      <div class="inner">Inspired by swiftlikescala.</div>
     </div>
     <header class="search">
       <input type="search" placeholder="Search..." required>
@@ -61,7 +44,7 @@
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>println(&quot;Hello, world!&quot;)
+                <pre><code>console.log('Hello World');
 </code></pre>
               </div>
             </div>
@@ -80,9 +63,9 @@ let myConstant = 42
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>var myVariable = 42
-myVariable = 50
-val myConstant = 42
+                <pre><code>let myVariable = 42;
+myVariable = 50;
+const myConstant = 42;
 </code></pre>
               </div>
             </div>
@@ -99,7 +82,7 @@ val myConstant = 42
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>val explicitDouble: Double = 70
+                <pre><code>let explicitDouble: number = 70
 </code></pre>
               </div>
             </div>
@@ -118,9 +101,9 @@ let widthLabel = label + String(width)
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>val label = &quot;The width is &quot;
-val width = 94
-val widthLabel = label + width
+                <pre><code>let label = 'The width is ';
+let width = 94;
+let widthLabel = label + width;
 </code></pre>
               </div>
             </div>
@@ -140,10 +123,10 @@ let fruitSummary = &quot;I have \(apples + oranges) &quot; +
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>val apples = 3
-val oranges = 5
-val fruitSummary = s&quot;I have ${apples + oranges} &quot; +
-                   &quot; pieces of fruit.&quot;
+                <pre><code>let apples = 3;
+let oranges = 5;
+let fruitSummary = 'I have `${apples + oranges}` ' +
+                   ' pieces of fruit.';
 </code></pre>
               </div>
             </div>
@@ -168,10 +151,10 @@ for i in 0..count {
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>val names = Array(&quot;Anna&quot;, &quot;Alex&quot;, &quot;Brian&quot;, &quot;Jack&quot;)
-val count = names.length
-for (i &lt;- 0 until count) {
-    println(s&quot;Person ${i + 1} is called ${names(i)}&quot;)
+                <pre><code>let names = ['Anna', 'Alex', 'Brian', 'Jack');
+let count = names.length;
+for (i &lt; 0 ... count) {
+    console.log('Person `${i + 1}` is called `${names[i]}`');
 }
 // Person 1 is called Anna
 // Person 2 is called Alex
@@ -200,8 +183,9 @@ for (i &lt;- 0 until count) {
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>for (index &lt;- 1 to 5) {
-    println(s&quot;$index times 5 is ${index * 5}&quot;)
+                <pre><code>let numbers = [1,2,3,4,5];
+for (let index of numbers) {
+    console.log('`${index + 1}` times 5 is `${index * 5}`');
 }
 // 1 times 5 is 5
 // 2 times 5 is 10
@@ -231,9 +215,9 @@ shoppingList[1] = &quot;bottle of water&quot;
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>var shoppingList = Array(&quot;catfish&quot;,
-    &quot;water&quot;, &quot;tulips&quot;, &quot;blue paint&quot;)
-shoppingList(1) = &quot;bottle of water&quot;
+                <pre><code>let shoppingList =['catfish',
+    'water', 'tulips', 'blue paint']
+shoppingList[1] = 'bottle of water'
 </code></pre>
               </div>
             </div>
@@ -254,12 +238,10 @@ occupations[&quot;Jayne&quot;] = &quot;Public Relations&quot;
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>var occupations = scala.collection.mutable.Map(
-    &quot;Malcolm&quot; -&gt; &quot;Captain&quot;,
-    &quot;Kaylee&quot; -&gt; &quot;Mechanic&quot;
-)
-occupations(&quot;Jayne&quot;) = &quot;Public Relations&quot;
-</code></pre>
+                <pre><code>let occupations: {[key: string]: string} = {};
+occupations['Malcolm'] = 'Captain';
+occupations['Kaylee'] = 'Mechanic';
+occupations['Jayne'] = 'Public Relations';</code></pre>
               </div>
             </div>
           </div>
@@ -277,9 +259,9 @@ let emptyArrayNoType = []
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>val emptyArray = Array[String]()
-val emptyDictionary = Map[String, Float]()
-val emptyArrayNoType = Array()
+                <pre><code>let emptyArray: any[] = [];
+let emptyDictionary: {[key: any], any} = {};
+
 </code></pre>
               </div>
             </div>
@@ -304,20 +286,19 @@ greet(&quot;Bob&quot;, &quot;Tuesday&quot;)
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>def greet(name: String, day: String): String = {
-    return s&quot;Hello $name, today is $day.&quot;
+                <pre><code>function greet(name: string, day: string): string {
+    return 'Hello' +name + 'today is' +day;
 }
-greet(&quot;Bob&quot;, &quot;Tuesday&quot;)
-</code></pre>
+greet('Bob', 'Tuesday');</code></pre>
               </div>
             </div>
             <div data-browser="idiomatic" class="browser idiomatic">
               <h4>IDIOMATIC SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
                 <pre><code>def greet(name: String, day: String): String =
-    s&quot;Hello $name, today is $day.&quot;
+    s'Hello $name, today is $day.'
 
-greet(&quot;Bob&quot;, &quot;Tuesday&quot;)
+greet('Bob', 'Tuesday')
 </code></pre>
               </div>
             </div>
@@ -336,8 +317,8 @@ greet(&quot;Bob&quot;, &quot;Tuesday&quot;)
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>def getGasPrices(): (Double, Double, Double) = {
-    return (3.59, 3.69, 3.79)
+                <pre><code>function getGasPrices(): [number, number, number] {
+    return [3.59, 3.69, 3.79]
 }
 </code></pre>
               </div>
@@ -369,15 +350,15 @@ sumOf(42, 597, 12)
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>def sumOf(numbers: Int*): Int = {
-    var sum = 0
-    for (number &lt;- numbers) {
-        sum += number
+                <pre><code>function sumOf(...numbers: number[]): number{
+    var sum = 0;
+    for let (number of numbers){
+        sum + = number;
     }
-    return sum
+    return sum;
 }
-sumOf(42, 597, 12)
-</code></pre>
+
+sumOf(42, 597, 12);</code></pre>
               </div>
             </div>
             <div data-browser="idiomatic" class="browser idiomatic">
@@ -407,14 +388,7 @@ increment(7)
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>def makeIncrementer(): Int =&gt; Int = {
-    def addOne(number: Int): Int = {
-        return 1 + number
-    }
-    return addOne
-}
-var increment = makeIncrementer()
-increment(7)
+                <pre><code>type makeIncrementer: number = () =&gt; number;
 </code></pre>
               </div>
             </div>
@@ -443,9 +417,8 @@ numbers.map({ number in 3 * number })
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>var numbers = Array(20, 19, 7, 12)
-numbers.map( number =&gt; 3 * number )
-</code></pre>
+                <pre><code>let number = [20, 19, 7, 12];
+numbers.map( number =&gt; number * 3);</code></pre>
               </div>
             </div>
           </div>
@@ -461,8 +434,8 @@ numbers.map( number =&gt; 3 * number )
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>Array(1, 5, 3, 12, 2).sortWith(_ &gt; _)
-</code></pre>
+                <pre><code>let numbers = [1, 5, 3, 12, 2];
+numbers.sort();</code></pre>
               </div>
             </div>
           </div>
@@ -482,12 +455,10 @@ area(width: 10, height: 10)
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>def area(width: Int, height: Int): Int = {
-    return width * height
+                <pre><code>function area(width: number, height: number): number{
+    return width * height;
 }
-
-area(width = 10, height = 10)
-</code></pre>
+area(10,10);</code></pre>
               </div>
             </div>
           </div>
@@ -514,9 +485,11 @@ area(width = 10, height = 10)
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
                 <pre><code>class Shape {
-    var numberOfSides = 0
-    def simpleDescription(): String = {
-        return s&quot;A shape with $numberOfSides sides.&quot;
+    let numberOfSides; number
+    function simpleDescription(): string = {
+        return &quot;A shape with `${numberOfSides}` sides.&quot;
+        //Alternative
+        //return &quot;A shape with (numberOfSides) sides.&quot;
     }
 }
 </code></pre>
@@ -547,9 +520,9 @@ var shapeDescription = shape.simpleDescription()
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>var shape = new Shape()
+                <pre><code>let shape = new Shape()
 shape.numberOfSides = 7
-var shapeDescription = shape.simpleDescription()
+let shapeDescription = shape.simpleDescription()
 </code></pre>
               </div>
             </div>
@@ -603,20 +576,55 @@ test.simpleDescription()
                 <pre><code>class NamedShape(var name: String,
                  var numberOfSides: Int = 0) {
     def simpleDescription =
-        s&quot;A shape with $numberOfSides sides.&quot;
+        s'A shape with $numberOfSides sides.'
 }
 
 class Square(var sideLength: Double, name: String)
     extends NamedShape(name, numberOfSides = 4) {
     def area = sideLength * sideLength
     override def simpleDescription =
-        s&quot;A square with sides of length $sideLength.&quot;
+        s'A square with sides of length $sideLength.'
 }
 
-val test = new Square(5.2, &quot;my test square&quot;)
+val test = new Square(5.2, 'my test square')
 test.area
 test.simpleDescription
-</code></pre>
+
+
+class NamedShape {
+    numberOfSides = 0;
+    name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+    simpleDescription(): string {
+        return 'A shape with ' + this.numberOfSides +
+         ' sides.';
+    }
+}
+
+class Square extends NamedShape {
+    sideLength: number;
+
+    constructor(sideLength: number, name: string) {
+        super(name);
+        this.sideLength = sideLength;
+        this.numberOfSides = 4;
+    }
+    area() : number {
+        return this.sideLength * this.sideLength
+    }
+
+    simpleDescription(): string {
+        return 'A square with sides of length ' +
+        this.sideLength + '.'
+    }
+}
+
+let test = new Square(5.2, 'square');
+test.area();
+test.simpleDescription();</code></pre>
               </div>
             </div>
           </div>
@@ -644,10 +652,10 @@ for item in library {
                 <pre><code>var movieCount = 0
 var songCount = 0
  
-for (item &lt;- library) {
-    if (item.isInstanceOf[Movie]) {
+for (let item of library) {
+    if (item instanceof Movie) {
         movieCount += 1
-    } else if (item.isInstanceOf[Song]) {
+    } else if (item instanceof Song) {
         songCount += 1
     }
 }
@@ -679,20 +687,19 @@ for item in library {
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>var movieCount = 0
+                <pre><code>//TypeScript doesn't have pattern matching functionality built in
+
+var movieCount = 0
 var songCount = 0
 
-for (item &lt;- library) {
-  item match {
-    case movie: Movie =&gt;
-      movieCount += 1
-      println(s&quot;Movie: '${movie.name}', dir. ${movie.director}&quot;)
-    case song: Song =&gt;
-      songCount += 1
-      println(s&quot;Song: '${song.title}'&quot;)
-  }
-}
-</code></pre>
+type item = Movie | Song;
+
+const piece = Movie(name: 'Nine');
+if (typeof piece === 'Movie'){
+  movieCount ++;
+} else if (typeof piece === 'Song'){
+  songCount ++;
+}</code></pre>
               </div>
             </div>
           </div>
@@ -711,11 +718,18 @@ for (item &lt;- library) {
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>for (obj &lt;- someObjects) {
-    val movie = obj.asInstanceOf[Movie]
-    println(s&quot;Movie: '${movie.name}', dir. ${movie.director}&quot;)
+                <pre><code>class Animal{
 }
-</code></pre>
+
+class Cat extends Animal {
+    meow(){}
+}
+
+function downcasting(ragdoll: Animal){
+    if (ragdoll instance of Cat){
+        ragdoll.meow();
+    }
+}</code></pre>
               </div>
             </div>
           </div>
@@ -737,14 +751,13 @@ func f&lt;T: Nameable&gt;(x: T) {
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>trait Nameable {
-    def name(): String
+                <pre><code>interface Nameable {
+    name(): string;
 }
 
-def f[T &lt;: Nameable](x: T) = {
-    println(&quot;Name is &quot; + x.name())
-}
-</code></pre>
+printName(x: Nameable) {
+    console.log('Name is ' + x.name());
+}</code></pre>
               </div>
             </div>
           </div>
@@ -772,24 +785,23 @@ println(&quot;Three feet is \(threeFeet) meters&quot;)
             <div data-browser="scala" class="browser scala">
               <h4>SCALA</h4>
               <div data-lang="scala" class="code-block language-scala">
-                <pre><code>object Extensions {
-    implicit class DoubleUnit(d: Double) {
-        def km: Double = { return d * 1000.0 }
-        def m: Double = { return d }
-        def cm: Double = { return d / 100.0 }
-        def mm: Double = { return d / 1000.0 }
-        def ft: Double = { return d / 3.28084 }
-    }
+                <pre><code>interface Number {
+    km(): number;
+    cm(): number;
+} 
+
+Number.prototype.mm = function() : number {
+    return this * 100;
 }
 
-import Extensions.DoubleUnit
+Number.prototype.km = function() : number {
+    return this / 1000;
+}
 
-val oneInch = 25.4.mm
-println(s&quot;One inch is $oneInch meters&quot;)
-// prints &quot;One inch is 0.0254 meters&quot;
-val threeFeet = 3.ft
-println(s&quot;Three feet is $threeFeet meters&quot;)
-// prints &quot;Three feet is 0.914399970739201 meters&quot;
+let oneMeter = 1000.mm();
+console.log(&quot;One meter is &quot; + oneMeter + &quot;centimeter&quot;);
+let oneKilometer = 1000.km();
+console.log(&quot;One kilometer is&quot; + oneKilometer + &quot;kilometer&quot;);
 </code></pre>
               </div>
             </div>
@@ -821,7 +833,7 @@ println(s&quot;Three feet is $threeFeet meters&quot;)
         </div>
       </section>
     </div>
-    <footer><p>Shamelessly forked from <a href="http://youmightnotneedjquery.com/">http://youmightnotneedjquery.com/</a>.</footer>
+    <footer><p>Forked from <a href="http://youmightnotneedjquery.com/">http://youmightnotneedjquery.com/</a>.</footer>
     <div class="changelog">
       <p>2014 July 16 - Added additional comparisons to 'idiomatic' Scala usage.</p>
       <p>2014 July 16 - Pattern match example from Fredrik Ekholdt.</p>

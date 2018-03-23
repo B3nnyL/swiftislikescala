@@ -1,3 +1,3 @@
-var shape = new Shape()
+let shape = new Shape()
 shape.numberOfSides = 7
-var shapeDescription = shape.simpleDescription()
+let shapeDescription = shape.simpleDescription()

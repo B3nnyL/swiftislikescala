@@ -1,7 +1,7 @@
-trait Nameable {
-    def name(): String
+interface Nameable {
+    name(): string;
 }
 
-def f[T <: Nameable](x: T) = {
-    println("Name is " + x.name())
+printName(x: Nameable) {
+    console.log('Name is ' + x.name());
 }

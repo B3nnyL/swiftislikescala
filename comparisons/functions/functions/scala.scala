@@ -1,4 +1,4 @@
-def greet(name: String, day: String): String = {
-    return s"Hello $name, today is $day."
+function greet(name: string, day: string): string {
+    return 'Hello' +name + 'today is' +day;
 }
-greet("Bob", "Tuesday")
+greet('Bob', 'Tuesday');

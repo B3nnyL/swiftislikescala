@@ -1,3 +1,3 @@
-val emptyArray = Array[String]()
-val emptyDictionary = Map[String, Float]()
-val emptyArrayNoType = Array()
+let emptyArray: any[] = [];
+let emptyDictionary: {[key: any], any} = {};
+

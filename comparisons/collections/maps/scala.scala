@@ -1,5 +1,4 @@
-var occupations = scala.collection.mutable.Map(
-    "Malcolm" -> "Captain",
-    "Kaylee" -> "Mechanic"
-)
-occupations("Jayne") = "Public Relations"
+let occupations: {[key: string]: string} = {};
+occupations['Malcolm'] = 'Captain';
+occupations['Kaylee'] = 'Mechanic';
+occupations['Jayne'] = 'Public Relations';

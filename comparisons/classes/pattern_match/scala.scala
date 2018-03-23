@@ -1,13 +1,13 @@
+//TypeScript doesn't have pattern matching functionality built in
+
 var movieCount = 0
 var songCount = 0
 
-for (item <- library) {
-  item match {
-    case movie: Movie =>
-      movieCount += 1
-      println(s"Movie: '${movie.name}', dir. ${movie.director}")
-    case song: Song =>
-      songCount += 1
-      println(s"Song: '${song.title}'")
-  }
+type item = Movie | Song;
+
+const piece = Movie(name: 'Nine');
+if (typeof piece === 'Movie'){
+  movieCount ++;
+} else if (typeof piece === 'Song'){
+  songCount ++;
 }

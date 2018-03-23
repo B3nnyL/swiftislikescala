@@ -1,3 +1,3 @@
-val label = "The width is "
-val width = 94
-val widthLabel = label + width
+let label = 'The width is ';
+let width = 94;
+let widthLabel = label + width;

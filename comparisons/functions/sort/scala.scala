@@ -1,1 +1,2 @@
-Array(1, 5, 3, 12, 2).sortWith(_ > _)
+let numbers = [1, 5, 3, 12, 2];
+numbers.sort();

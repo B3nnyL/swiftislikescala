@@ -1,18 +1,17 @@
-object Extensions {
-    implicit class DoubleUnit(d: Double) {
-        def km: Double = { return d * 1000.0 }
-        def m: Double = { return d }
-        def cm: Double = { return d / 100.0 }
-        def mm: Double = { return d / 1000.0 }
-        def ft: Double = { return d / 3.28084 }
-    }
+interface Number {
+    km(): number;
+    cm(): number;
+} 
+
+Number.prototype.mm = function() : number {
+    return this * 100;
 }
 
-import Extensions.DoubleUnit
+Number.prototype.km = function() : number {
+    return this / 1000;
+}
 
-val oneInch = 25.4.mm
-println(s"One inch is $oneInch meters")
-// prints "One inch is 0.0254 meters"
-val threeFeet = 3.ft
-println(s"Three feet is $threeFeet meters")
-// prints "Three feet is 0.914399970739201 meters"
+let oneMeter = 1000.mm();
+console.log("One meter is " + oneMeter + "centimeter");
+let oneKilometer = 1000.km();
+console.log("One kilometer is" + oneKilometer + "kilometer");

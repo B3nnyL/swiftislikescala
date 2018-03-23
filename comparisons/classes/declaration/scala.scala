@@ -1,6 +1,8 @@
 class Shape {
-    var numberOfSides = 0
-    def simpleDescription(): String = {
-        return s"A shape with $numberOfSides sides."
+    let numberOfSides; number
+    function simpleDescription(): string = {
+        return "A shape with `${numberOfSides}` sides."
+        //Alternative
+        //return "A shape with (numberOfSides) sides."
     }
 }

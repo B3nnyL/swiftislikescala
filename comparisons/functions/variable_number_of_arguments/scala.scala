@@ -1,8 +1,9 @@
-def sumOf(numbers: Int*): Int = {
-    var sum = 0
-    for (number <- numbers) {
-        sum += number
+function sumOf(...numbers: number[]): number{
+    var sum = 0;
+    for let (number of numbers){
+        sum + = number;
     }
-    return sum
+    return sum;
 }
-sumOf(42, 597, 12)
+
+sumOf(42, 597, 12);

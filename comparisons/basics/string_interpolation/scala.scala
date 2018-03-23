@@ -1,4 +1,4 @@
-val apples = 3
-val oranges = 5
-val fruitSummary = s"I have ${apples + oranges} " +
-                   " pieces of fruit."
+let apples = 3;
+let oranges = 5;
+let fruitSummary = 'I have `${apples + oranges}` ' +
+                   ' pieces of fruit.';
