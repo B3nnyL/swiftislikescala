@@ -7,7 +7,7 @@ class NamedShape {
     }
 
     simpleDescription(): string {
-        return "A shape with" + numberOfSides + " sides."
+        return 'A shape with' + numberOfSides + ' sides.'
     }
 }
 
@@ -26,11 +26,11 @@ class Square extends NamedShape {
 
     func simpleDescription() -> String {
         super.simpleDescription();
-        return "A square with sides of length" +
-                sideLength + ".";
+        return 'A square with sides of length' +
+                sideLength + '.';
     }
 }
 
-let test = Square(sideLength: 5.2, name: "my test square")
-test.area()
-test.simpleDescription()
+let test = Square(5.2, 'my test square');
+test.area();
+test.simpleDescription();
