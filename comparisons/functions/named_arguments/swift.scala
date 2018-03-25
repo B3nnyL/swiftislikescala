@@ -1,5 +1,5 @@
-func area(#width: Int, #height: Int) -> Int {
+func area(with width: Int, with height: Int) -> Int {
     return width * height
 }
 
-area(width: 10, height: 10)
+area(with: 10, with: 10)
