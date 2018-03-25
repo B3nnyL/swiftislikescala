@@ -1,7 +1,7 @@
 //TypeScript doesn't have pattern matching functionality built in
 
-var movieCount = 0
-var songCount = 0
+var movieCount = 0;
+var songCount = 0;
 
 type item = Movie | Song;
 

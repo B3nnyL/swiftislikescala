@@ -14,7 +14,7 @@ head
 
   title Swift is a lot like Scala
 
-  meta(name='description', content='Transfer swift knowledge to typescript')
+  meta(name='description', content='Transfer knowledge between Swift and Typescript')
 
   link(rel='stylesheet', href='css/prism.css')
   link(rel='stylesheet', href='css/index.css')
@@ -38,7 +38,7 @@ body
 
     header.search
 
-      input(type="search", placeholder="Search...", required)
+      input(type="search", placeholder="Search comparisons...", required)
 
     .comparisons
 
@@ -79,6 +79,8 @@ body
                     .browser(data-browser=getNamePart(browser), class=getNamePart(browser))
                       if browser == 'idiomatic'
                         h4= 'IDIOMATIC SCALA'
+                      else if browser == 'scala'
+                        h4= 'TypeScript'
                       else
                         h4= browser.toUpperCase()
 
@@ -90,16 +92,6 @@ body
 
     footer
       <p>Forked from <a href="http://youmightnotneedjquery.com/">http://youmightnotneedjquery.com/</a>.
-
-    .changelog
-      p
-        | 2014 July 16 - Added additional comparisons to 'idiomatic' Scala usage.
-      p
-        | 2014 July 16 - Pattern match example from Fredrik Ekholdt.
-      p
-        | 2014 June 4 - Cleanup of Subclass from Gerald Loeffler.
-      p
-        | 2014 June 4 - Added typecasting, protocols, and extensions.
 
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

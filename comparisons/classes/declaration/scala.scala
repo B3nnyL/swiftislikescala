@@ -1,8 +1,8 @@
 class Shape {
-    let numberOfSides; number
+    let numberOfSides; number;
     function simpleDescription(): string = {
-        return "A shape with `${numberOfSides}` sides."
+        return "A shape with `${numberOfSides}` sides.";
         //Alternative
-        //return "A shape with (numberOfSides) sides."
+        //return "A shape with (numberOfSides) sides.";
     }
 }

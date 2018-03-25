@@ -5,4 +5,5 @@ func sumOf(numbers: Int...) -> Int {
     }
     return sum
 }
+
 sumOf(numbers: 42, 597, 12)

@@ -1,1 +1,1 @@
-let explicitDouble: number = 70
+let explicitDouble: number = 70;
